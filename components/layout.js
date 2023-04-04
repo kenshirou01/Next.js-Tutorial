@@ -26,24 +26,15 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Link href="/posts/first-post">
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={144}
-                width={144}
-                alt=""
-              />
-            </Link>
-            <h1 className={utilStyles.heading2Xl}>
-              <Link
-                href="/posts/first-post"
-                className={utilStyles.colorInherit}
-              >
-                {name}
-              </Link>
-            </h1>
+            <Image
+              priority
+              src="/images/profile.jpg"
+              className={utilStyles.borderCircle}
+              height={144}
+              width={144}
+              alt=""
+            />
+            <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
